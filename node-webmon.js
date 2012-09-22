@@ -264,7 +264,7 @@ function run(pgClient) {
 // parse and act on command line
 //
 commander
-	.version('0.1.0')
+	.version('0.1.1')
 	.usage('--print-schema | <database connection string>')
 	.option('--print-schema', 'Print SQL that will (destructively!) set up the database with a blank config')
 	.parse(process.argv);
