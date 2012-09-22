@@ -1,0 +1,31 @@
+{
+  "name": "node-webmon",
+  "description": "A utility to poll webpages regularly, and/or stream data from a raw socket or socket.io server. All received data is logged into postgresql.",
+  "homepage": "http://github.com/andrewffff/node-webmon",
+  "author": "Andrew Francis (http://github.com/andrewffff)",
+  "bin": {
+    "node-webmon": "./node-webmon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/andrewffff/node-webmon.git"
+  },
+  "keywords": [
+    "cli",
+    "monitor",
+    "web",
+    "archive",
+    "socket.io"
+  ],
+  "version": "0.1.0",
+  "preferGlobal": "true",
+  "license": "MIT",
+  "dependencies": {
+    "carrier": "0.1.7",
+    "commander": "1.0.4",
+    "iconv": "1.2.3",
+    "pg": "0.8.4",
+    "socket.io-client": "0.9.10"
+  },
+  "main": "node-webmon.js"
+}
