@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 var net = require('net'),
 	fs = require('fs');
@@ -271,7 +272,7 @@ if(commander.args.length + (commander.printSchema?1:0) != 1) {
 	console.log("You must provide --print-schema or a connection string. Never both!");
 	process.exit(1);
 } else if(commander.printSchema) {
-	console.log("%s", fs.readFileSync('./schema.sql', 'utf-8'));
+	console.log("%s", fs.readFileSync(require.resolve('./schema.sql'), 'utf-8'));
 	process.exit(0);
 } else {
 	var pgClient = new pg.Client(commander.args[0]);
