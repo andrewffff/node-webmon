@@ -77,7 +77,8 @@ DbWriter.prototype.logError = function(data) {
 // the actual program
 //
 function run(pgClient) {
-	var writer = new DbWriter(pgClient, console, console);
+	//debug//var writer = new DbWriter(pgClient, console, console);
+	var writer = new DbWriter(pgClient, console);
 	
 	function doWeb(streamConfig) {
 		// accumulate stuff to log
